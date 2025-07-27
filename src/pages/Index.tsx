@@ -6,7 +6,8 @@ import { Student } from "@/components/StudentCard";
 import { getStudentsForKey, accessKeyConfigs } from "@/data/mockStudents";
 import { useToast } from "@/hooks/use-toast";
 import { Button } from "@/components/ui/button";
-import { ArrowLeft, Download, CheckCircle } from "lucide-react";
+import { ArrowLeft, Download, CheckCircle, Settings } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Index = () => {
   const [currentAccessKey, setCurrentAccessKey] = useState<string | null>(null);
@@ -114,6 +115,15 @@ const Index = () => {
             onDownloadBookmarked={handleDownloadBookmarked}
             accessKey={currentAccessKey}
           />
+          
+          <div className="fixed top-4 right-4 z-50">
+            <Link to="/admin">
+              <Button variant="outline" size="sm">
+                <Settings className="w-4 h-4 mr-2" />
+                Admin
+              </Button>
+            </Link>
+          </div>
           
           <main className="max-w-7xl mx-auto px-6 py-8">
             <div className="flex items-center justify-between mb-8">
