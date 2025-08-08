@@ -42,7 +42,7 @@ const Landing = () => {
           </div>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-16">
-            <Link to="/">
+            <Link to="/access-profiles">
               <Button size="lg" className="px-8 py-6 text-lg">
                 Explore Talent Pool
                 <ArrowRight className="w-5 h-5 ml-2" />
@@ -144,7 +144,7 @@ const Landing = () => {
                     <ArrowRight className="w-5 h-5 ml-2" />
                   </Button>
                 </Link>
-                <Link to="/">
+                <Link to="/access-profiles">
                   <Button variant="outline" size="lg" className="px-8 py-6 text-lg">
                     Browse Profiles
                   </Button>

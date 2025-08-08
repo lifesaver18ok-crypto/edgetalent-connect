@@ -117,10 +117,10 @@ const Index = () => {
           />
           
           <div className="fixed top-4 right-4 z-50">
-            <Link to="/admin">
+            <Link to="/">
               <Button variant="outline" size="sm">
-                <Settings className="w-4 h-4 mr-2" />
-                Admin
+                <ArrowLeft className="w-4 h-4 mr-2" />
+                Home
               </Button>
             </Link>
           </div>
@@ -165,7 +165,15 @@ const Index = () => {
           </main>
         </>
       ) : (
-        <main className="min-h-screen flex items-center justify-center px-6">
+        <main className="min-h-screen flex flex-col items-center justify-center px-6">
+          <div className="mb-8">
+            <Link to="/">
+              <Button variant="outline" size="sm">
+                <ArrowLeft className="w-4 h-4 mr-2" />
+                Back to Home
+              </Button>
+            </Link>
+          </div>
           <AccessKeyInput
             onKeySubmit={handleKeySubmit}
             isLoading={isLoading}

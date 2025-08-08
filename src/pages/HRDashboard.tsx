@@ -224,7 +224,7 @@ const HRDashboard = () => {
               </div>
             </div>
             <div className="flex items-center gap-4">
-              <Link to="/landing">
+              <Link to="/">
                 <Button variant="outline" size="sm">Home</Button>
               </Link>
               <Button variant="outline" size="sm" onClick={handleLogout}>

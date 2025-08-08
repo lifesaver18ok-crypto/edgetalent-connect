@@ -109,7 +109,7 @@ const Login = () => {
       <div className="relative w-full max-w-md">
         {/* Back to home link */}
         <div className="mb-8">
-          <Link to="/landing">
+          <Link to="/">
             <Button variant="outline" size="sm">
               <ArrowLeft className="w-4 h-4 mr-2" />
               Back to Home

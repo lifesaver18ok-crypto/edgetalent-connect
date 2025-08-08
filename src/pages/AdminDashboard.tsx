@@ -251,10 +251,10 @@ const AdminDashboard = () => {
         <div className="max-w-7xl mx-auto px-6 py-4">
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-4">
-              <Link to="/">
+              <Link to="/access-profiles">
                 <Button variant="outline" size="sm">
                   <ArrowLeft className="w-4 h-4" />
-                  Back to App
+                  Browse Profiles
                 </Button>
               </Link>
               <h1 className="text-2xl font-bold text-foreground">Admin Dashboard</h1>
